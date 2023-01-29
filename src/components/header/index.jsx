@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useStyles from "./style";
 
 const Header = () => {
@@ -7,18 +8,10 @@ const Header = () => {
       <div className={classes.container}>
         <h1 className={classes.title}>MultiSig</h1>
         <div className={classes.menu}>
-          <a href="/create" className={classes.menuItem}>
-            Create
-          </a>
-          <a href="/Submit" className={classes.menuItem}>
-            Submit
-          </a>
-          <a href="/execute" className={classes.menuItem}>
-            Execute
-          </a>
-          <a href="/rotate" className={classes.menuItem}>
-            Rotate
-          </a>
+          <Link to="/create" className={classes.menuItem}>Create</Link>
+          <Link to="/submit" className={classes.menuItem}>Submit</Link>
+          <Link to="/execute" className={classes.menuItem}>Execute</Link>
+          <Link to="/rotate" className={classes.menuItem}>Rotate</Link>
         </div>
       </div>
     </div>

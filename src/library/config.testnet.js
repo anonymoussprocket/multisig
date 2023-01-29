@@ -1,4 +1,4 @@
-{
+const config = {
     "rpc": "https://rpc.ghostnet.teztnets.xyz",
     "network": "ghostnet",
     "tokens": [
@@ -22,4 +22,6 @@
             "multisigAddr": "KT1L2o3A4PkdMKKZ1hkmDLXTD7HGU2AxZGPC"
         }
     ]
-}
+};
+
+export default config;

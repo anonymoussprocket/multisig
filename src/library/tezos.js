@@ -1,8 +1,8 @@
 import { DAppClient, TezosOperationType } from "@airgap/beacon-sdk";
-import { TezosMessageUtils, TezosNodeReader, TezosNodeWriter } from "conseiljs";
+import { TezosMessageUtils, TezosNodeReader } from "conseiljs";
 import { JSONPath } from "jsonpath-plus";
 
-const config = require(`./config.${process.env.REACT_APP_ENV || "mainnet"}.json`);
+const config = require('./config.mainnet.js').default;
 
 export const connectTezAccount = async () => {
     const client = new DAppClient({ name: "Multisig" });
@@ -168,8 +168,7 @@ export const getChainID = async () => {
 };
 
 export const interact = async ({ client, account }, operations, extraGas = 500, extraStorage = 50) => {
-    try {
-        let ops = [];
+    let ops = [];
         operations.forEach((op) => {
             ops.push({
                 kind: TezosOperationType.TRANSACTION,
@@ -183,6 +182,7 @@ export const interact = async ({ client, account }, operations, extraGas = 500, 
             });
         });
 
+    try {
         let head = 0;
         try { head = (await TezosNodeReader.getBlockHead(config.rpc)).header.level; } catch { }
 
@@ -196,6 +196,7 @@ export const interact = async ({ client, account }, operations, extraGas = 500, 
 
         return result["transactionHash"];
     } catch (err) {
+        console.err(`failed to submit operation: ${ops}`)
         console.error(err);
         throw err;
     }

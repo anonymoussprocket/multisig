@@ -1,7 +1,6 @@
 import "./App.css";
 
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-
+import { Route, HashRouter, Switch } from "react-router-dom";
 import Create from "./components/create";
 import Execute from "./components/execute";
 import Header from "./components/header";
@@ -10,7 +9,7 @@ import Rotate from "./components/rotate";
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <div className="App">
         <Header />
         <Switch>
@@ -31,7 +30,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 

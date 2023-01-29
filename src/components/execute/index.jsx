@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { connectTezAccount, executeMultisigOperation, getNextOperationIndex } from "../../library/tezos";
 import useStyles from "./style";
 
-const config = require(`../../library/config.${process.env.REACT_APP_ENV || "mainnet"}.json`);
+const config = require('../../library/config.mainnet.js').default;
 
 const Execute = () => {
   const classes = useStyles();

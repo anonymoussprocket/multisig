@@ -1,4 +1,4 @@
-{
+const config = {
     "rpc": "https://mainnet.tezos.marigold.dev/",
     "network": "mainnet",
     "tokens": [
@@ -22,4 +22,6 @@
             "multisigAddr": "KT18mL6WEyiJbevboKa8kEVRP2Rgvb8gxaJD"
         }
     ]
-}
+};
+
+export default config;

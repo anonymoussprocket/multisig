@@ -5,7 +5,7 @@ import { SigningType } from "@airgap/beacon-sdk";
 import { useState } from "react";
 import useStyles from "./style";
 
-const config = require(`../../library/config.${process.env.REACT_APP_ENV || "mainnet"}.json`);
+const config = require('../../library/config.mainnet.js').default;
 
 const Create = () => {
   const classes = useStyles();
@@ -25,6 +25,7 @@ const Create = () => {
       const tokenType = tokenRecord.tokenType ?? 'FA1.2';
 
       const [chainID, opID, { client, account }] = await Promise.all([getChainID(), getNextOperationIndex(multisigAddr), connectTezAccount()]);
+
       const data =
         tokenType === 'FA1.2' ?
         mintRequest(chainID, opID, tokenAddress, event.target.address.value, event.target.amount.value)

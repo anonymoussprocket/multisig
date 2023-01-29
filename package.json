@@ -1,7 +1,9 @@
 {
   "name": "multisig",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "UNLICENSED",
+  "homepage": "https://anonymoussprocket.github.io/multisig",
   "dependencies": {
     "@airgap/beacon-sdk": "^2.3.4",
     "@material-ui/core": "^4.12.3",
@@ -15,7 +17,12 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
