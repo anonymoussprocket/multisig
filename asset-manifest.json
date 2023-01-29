@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/multisig/static/css/main.a617e044.chunk.css",
-    "main.js": "/multisig/static/js/main.b5ec9113.chunk.js",
-    "main.js.map": "/multisig/static/js/main.b5ec9113.chunk.js.map",
-    "runtime-main.js": "/multisig/static/js/runtime-main.f18f12ce.js",
-    "runtime-main.js.map": "/multisig/static/js/runtime-main.f18f12ce.js.map",
-    "static/js/2.afb105a5.chunk.js": "/multisig/static/js/2.afb105a5.chunk.js",
-    "static/js/2.afb105a5.chunk.js.map": "/multisig/static/js/2.afb105a5.chunk.js.map",
-    "static/js/3.8695c62c.chunk.js": "/multisig/static/js/3.8695c62c.chunk.js",
-    "static/js/3.8695c62c.chunk.js.map": "/multisig/static/js/3.8695c62c.chunk.js.map",
+    "main.js": "/multisig/static/js/main.6b23721e.chunk.js",
+    "main.js.map": "/multisig/static/js/main.6b23721e.chunk.js.map",
+    "runtime-main.js": "/multisig/static/js/runtime-main.b4811336.js",
+    "runtime-main.js.map": "/multisig/static/js/runtime-main.b4811336.js.map",
+    "static/js/2.3ff33310.chunk.js": "/multisig/static/js/2.3ff33310.chunk.js",
+    "static/js/2.3ff33310.chunk.js.map": "/multisig/static/js/2.3ff33310.chunk.js.map",
+    "static/js/3.09823552.chunk.js": "/multisig/static/js/3.09823552.chunk.js",
+    "static/js/3.09823552.chunk.js.map": "/multisig/static/js/3.09823552.chunk.js.map",
     "index.html": "/multisig/index.html",
     "static/css/main.a617e044.chunk.css.map": "/multisig/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.afb105a5.chunk.js.LICENSE.txt": "/multisig/static/js/2.afb105a5.chunk.js.LICENSE.txt"
+    "static/js/2.3ff33310.chunk.js.LICENSE.txt": "/multisig/static/js/2.3ff33310.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f18f12ce.js",
-    "static/js/2.afb105a5.chunk.js",
+    "static/js/runtime-main.b4811336.js",
+    "static/js/2.3ff33310.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.b5ec9113.chunk.js"
+    "static/js/main.6b23721e.chunk.js"
   ]
 }
